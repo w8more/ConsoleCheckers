@@ -71,8 +71,6 @@ void Game::update()
 
 void Game::draw()
 {
-	SetConsoleTextAttribute(hConsole, 176);
-	system("cls");
 	Game::board.draw();
 }
 
