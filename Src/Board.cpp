@@ -119,10 +119,12 @@ void Board::draw()
 						c = 'w';
 				}
 				else
+				{
 					if (a->king)
 						c = 'B';
 					else
 						c = 'b';
+				}
 				drawRect(i, j, c);
 			}
 		}

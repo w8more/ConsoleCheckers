@@ -6,6 +6,7 @@
 
 #include <windows.h>
 #include <iostream>
+#include <string>
 
 #define boxPiece Game::board.getPiece(Vector2D(y, x))
 
@@ -122,4 +123,7 @@ void Box::update()
 		if (Game::board.game_over(Game::Turn))
 			Game::running = false;
 	}
+
+	//std::string name;
+	//std::getline(std::cin, name);
 }

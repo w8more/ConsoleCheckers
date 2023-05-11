@@ -24,6 +24,9 @@ int main()
 
 	game->setDif(d);
 
+	SetConsoleTextAttribute(Game::hConsole, 181);
+	system("cls");
+
 	while (Game::running)
 	{
 		game->update();

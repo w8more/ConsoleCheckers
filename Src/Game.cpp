@@ -67,12 +67,11 @@ void Game::update()
 	GetConsoleScreenBufferInfo(hConsole, &csbi);
 	width = (csbi.srWindow.Right - csbi.srWindow.Left + 1);
 	height = (csbi.srWindow.Bottom - csbi.srWindow.Top + 1);
+	
 }
 
 void Game::draw()
 {
-	SetConsoleTextAttribute(hConsole, 176);
-	system("cls");
 	Game::board.draw();
 }
 
