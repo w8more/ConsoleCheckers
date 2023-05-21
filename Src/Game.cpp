@@ -36,13 +36,10 @@ void Game::init()
 	GetConsoleScreenBufferInfo(hConsole, &csbi);
 	width = (csbi.srWindow.Right - csbi.srWindow.Left + 1);
 	height = (csbi.srWindow.Bottom - csbi.srWindow.Top + 1);
-
-	system("cls");
 }
 
 void Game::update()
 {
-	
 	if (bot_vs_bot)
 	{
 		Game::draw();
@@ -67,7 +64,6 @@ void Game::update()
 	GetConsoleScreenBufferInfo(hConsole, &csbi);
 	width = (csbi.srWindow.Right - csbi.srWindow.Left + 1);
 	height = (csbi.srWindow.Bottom - csbi.srWindow.Top + 1);
-	
 }
 
 void Game::draw()
@@ -97,4 +93,11 @@ void Game::printWinner()
 	{
 		std::cout << "You successfully left the game" << std::endl;
 	}
+}
+
+Game::~Game()
+{
+	ReleaseDC(hwnd, hdc);
+	CloseHandle(hwnd);
+	CloseHandle(hConsole);
 }

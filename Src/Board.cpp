@@ -95,6 +95,8 @@ void Board::drawRect(int y, int x, char c)
 		
 		DrawTextA(Game::hdc, a, 2, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER | DT_NOCLIP);
 	}
+
+	DeleteObject(hbr);
 }
 
 void Board::draw()

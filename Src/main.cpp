@@ -27,6 +27,8 @@ int main()
 	SetConsoleTextAttribute(Game::hConsole, 181);
 	system("cls");
 
+	game->draw();
+
 	while (Game::running)
 	{
 		game->update();
