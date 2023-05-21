@@ -33,7 +33,6 @@ void Box::update()
 		Game::endPressed = true;
 		Game::running = false;
 	}
-
 	else if ((GetAsyncKeyState('s') || GetAsyncKeyState('S')) && 0x8000)
 	{
 		if (y < 7)
@@ -74,7 +73,7 @@ void Box::update()
 		if (x < 6) x += 2;
 	}
 
-	else if (GetAsyncKeyState(VK_RETURN) && 0x8000)
+	else if (GetAsyncKeyState(VK_SPACE) && 0x8000)
 	{
 		if (Game::board.Selected)
 		{
@@ -123,7 +122,4 @@ void Box::update()
 		if (Game::board.game_over(Game::Turn))
 			Game::running = false;
 	}
-
-	//std::string name;
-	//std::getline(std::cin, name);
 }

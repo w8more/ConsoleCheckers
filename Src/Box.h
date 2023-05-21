@@ -8,6 +8,4 @@ public:
 	int y;
 	int x;
 	void update();
-	void draw();
 };
-

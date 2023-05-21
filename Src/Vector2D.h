@@ -83,12 +83,4 @@ public:
     {
         return x != other.x || y != other.y;
     }
-
-    /* friend ostream& operator<<(ostream& os, Vector2D& vec);*/
 };
-
-//ostream& operator<<(ostream& os, const Vector2D& vec)
-//{
-//    os << " [" << vec.y << ";" << vec.x << "] ";
-//    return os;
-//}

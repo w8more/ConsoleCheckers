@@ -1,9 +1,7 @@
 #pragma once
 
 #include <vector>
-#include <memory>
 #include <windows.h>
-
 
 #include "Piece.h"
 #include "move.h"

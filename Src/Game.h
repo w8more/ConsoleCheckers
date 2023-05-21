@@ -2,12 +2,13 @@
 
 #include <Windows.h>
 
-#include "Board.h"
 #include "Box.h"
+#include "Board.h"
 
 class Game
 {
 public:
+	~Game();
 	Game();
 	void init();
 	void update();
@@ -28,4 +29,3 @@ public:
 	static int height;
 	static int difficulty;
 };
-

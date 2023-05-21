@@ -1,6 +1,4 @@
 #include <iostream>
-#include <conio.h>
-#include <windows.h>
 #include "Game.h"
 
 extern Box box;
@@ -26,6 +24,8 @@ int main()
 
 	SetConsoleTextAttribute(Game::hConsole, 181);
 	system("cls");
+
+	game->draw();
 
 	while (Game::running)
 	{

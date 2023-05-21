@@ -35,4 +35,3 @@ private:
 	void check_king_moves_after_leap(move& curr, Board& Inst, std::vector<move>& Result, bool LeftToRight);
 	
 };
-
